@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Remember to setup your env file for this project.
 
-Things you may want to cover:
+Example:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+DATABASE_NAME=rails_database
+DATABASE_USER=admin
+DATABASE_PASSWORD=123
+DATABASE_HOST=database
+```
