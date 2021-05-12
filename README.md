@@ -17,15 +17,11 @@ DATABASE_HOST=rails-db
 
 # Create your db
 
-- Enter rails-app container:
+- Make sure your containers are up and running
+
+- Then:
 
 ```
-docker exec -it rails-app sh
-```
-
-- Then, run:
-
-```
-bundle exec rake db:create
-bundle exec rake db:migrate
+docker exec rails-app bundle exec rake db:create
+docker exec rails-app bundle exec rake db:migrate
 ```

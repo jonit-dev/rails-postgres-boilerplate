@@ -20,16 +20,12 @@ COPY . /myapp
 # Add a script to be executed every time the container starts.
 COPY ./docker-entrypoints/entrypoint.sh /usr/bin/myapp/docker-entrypoints/
 RUN chmod +x /usr/bin/myapp/docker-entrypoints/entrypoint.sh
-
-ENTRYPOINT ["./docker-entrypoints/entrypoint.sh"]
-
+ 
 EXPOSE 3000
-
 
 # install JS dependencies
 COPY package.json yarn.lock ./
 RUN yarn install --check-files
-
 
 COPY . ./
 
